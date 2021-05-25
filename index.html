@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section class="content">
+      <div class="icons">
+        <img src="images/logo.svg" alt="logo.svg">
+        <div class="icons">
+          <img src="images/icon-document.svg" alt="">
+          <img src="images/icon-folder.svg" alt="">
+          <img src="images/icon-upload.svg" alt="">
+        </div>
+      </div>
+      <div class="storage">
+        <h3>
+          You’ve used 815 GB of your storage
+        </h3>
+        <div class="left">
+          <p>
+            185 GB Left
+          </p>
+        </div>
+        <progress value="815" max="1000"></progress>
+        <div class="labels">
+          <p class="one">
+            0 GB
+          </p>
+          <p class="two">
+            1000 GB
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>

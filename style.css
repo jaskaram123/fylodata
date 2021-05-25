@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+:root{
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+    --gradient: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(images/bg-desktop.png) no-repeat bottom, var(--VeryDarkBlue);
+    background-size: 100vw;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    background: var(--DarkBlue);
+    padding: 10px 40px 20px 10px;
+    border-radius: 1rem 3rem 1rem 1rem;
+    margin-right: 1rem;
+}
+.storage{
+    background: var(--DarkBlue);
+    padding: 10px 40px 20px 10px;
+    border-radius: 1rem;
+}
+progress{
+    min-width: 25rem;
+    appearance: none;
+}
+progress::before {
+    content: '';
+    position: absolute;
+    height: 0.7em;
+    top: 23.6em;
+    left: 40.9em;
+    margin-top: -1em;
+    width: 0.7em;
+    background: white;
+    border-radius: 50px;
+  }
+
+progress::-webkit-progress-bar{
+    background-color: var(--VeryDarkBlue);
+    border-radius: 50px;
+}
+progress::-webkit-progress-value{
+    background: var(--gradient);
+    border-radius: 50px;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
