@@ -17,8 +17,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: url(images/bg-desktop.png) no-repeat bottom, var(--VeryDarkBlue);
-    background-size: 100%;
-    background-position-y: 22rem;
+    background-size: 100% 50%;
 }
 main{
     min-height: 100vh;
