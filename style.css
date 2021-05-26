@@ -28,13 +28,15 @@ main{
 
 section{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    transform: translate(0%,-50%);
+    box-shadow: 32px 31px 44px var(--VeryDarkBlue);
 }
 
 .icons{
     background: var(--DarkBlue);
-    padding: 10px 40px 20px 10px;
-    border-radius: 1rem 3rem 1rem 1rem;
+    padding: 21.7px 81.6px 40px 20px;
+    border-radius: 1rem 5.6rem 1rem 1rem;
     margin-right: 1rem;
 }
 .storage{
@@ -42,18 +44,79 @@ section{
     padding: 10px 40px 20px 10px;
     border-radius: 1rem;
 }
+
+.foldericon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.6em;
+    min-width: 2em;
+    height: 25px;
+}
+
+.foldericon img{
+    background-color: var(--VeryDarkBlue);
+    border-radius: 0.2em;
+    padding: 0.5em;
+    min-height: 100%;
+    margin: 0.3em;
+}
+
+.storage{
+    min-height: 5em;
+    padding: 23.6px 26px;
+    position: relative;
+}
+.storage h3{
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.storage h3 span{
+    font-weight: 800;
+}
+
+.right{
+    position: absolute;
+    right: 26px;
+    top: -52px;
+    background-color: white;
+    border-radius: 0.6em;
+    padding: 1em;
+}
+
+p[style] span{
+    color: black;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.border{
+    min-width: 0;
+    color: black;
+    position: absolute;
+    bottom: -26.5px;
+    right: 0;
+    min-height: 0;
+    border: 28.6px solid transparent;
+    border-right: 25.4px solid white;
+}
 progress{
     min-width: 25rem;
     appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50px;
+    padding: 2px;
 }
 progress::before {
     content: '';
-    position: absolute;
-    height: 0.7em;
+    position: relative;
+    min-height: 0.7em ;
     top: 23.6em;
     left: 40.9em;
     margin-top: -1em;
-    width: 0.7em;
+    min-width: 0.7em;
     background: white;
     border-radius: 50px;
   }
@@ -62,6 +125,11 @@ progress::-webkit-progress-bar{
     background-color: var(--VeryDarkBlue);
     border-radius: 50px;
 }
+progress::-moz-progress-bar{
+    background: var(--gradient);
+    border-radius: 50px;
+}
+
 progress::-webkit-progress-value{
     background: var(--gradient);
     border-radius: 50px;
