@@ -108,6 +108,7 @@ progress{
     -webkit-appearance: none;
     border-radius: 50px;
     padding: 2px;
+    background: var(--VeryDarkBlue);
 }
 progress::before {
     content: '';
