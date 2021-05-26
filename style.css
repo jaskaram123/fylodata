@@ -146,9 +146,9 @@ progress::-webkit-progress-value{
 }
 
 @media screen and (max-width:800px){
+    
     section{
         display: initial;
-        transform: translate(0%,-50%);
         box-shadow: 32px 31px 44px var(--VeryDarkBlue);
     }
     .icons{
@@ -204,5 +204,12 @@ progress::-webkit-progress-value{
     }
     .border{
         display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        background: url(images/bg-mobile.png) no-repeat center;
     }
 }
