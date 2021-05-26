@@ -18,6 +18,7 @@ body{
     height: 100vh;
     background: url(images/bg-desktop.png) no-repeat bottom, var(--VeryDarkBlue);
     background-size: 100%;
+    background-position-y: 22rem;
 }
 main{
     min-height: 100vh;
@@ -30,7 +31,6 @@ section{
     display: flex;
     border-radius: 1rem;
     align-items: flex-end;
-    transform: translate(0%,-50%);
     box-shadow: 32px 31px 44px var(--VeryDarkBlue);
     margin: 16px;
 }
